@@ -9,3 +9,5 @@
 6.TestV4L2 简单的实现 V4L2 采集摄像头图像
 7.Test_chart_Realtimecurve 简单的实现 qml chartView 实时曲线显示
 8.TestDrivingcurve 简单的实现 qml maps 实时行驶路线以及返航曲线,车辆使用在中心点,带偏转(ARM中适合Qt5.12.6)
+9.TestGDBus 简单实现 GDbus通信,分为sever,client,能够进行IPC通信,采用cmake构建(未完全实现)
+10.TestColorPicker 实现简单的颜色拾取器,通过定时器采集程序之外的鼠标位置.
