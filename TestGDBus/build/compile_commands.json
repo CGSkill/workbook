@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/cg/GitHub/workbook/TestGDBus/build",
+  "command": "/usr/bin/cc -I/home/cg/GitHub/workbook/TestGDBus/includes -I/home/cg/GitHub/workbook/TestGDBus/gdbus -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/gio-unix-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -g -o client/CMakeFiles/client.dir/client.c.o -c /home/cg/GitHub/workbook/TestGDBus/client/client.c",
+  "file": "/home/cg/GitHub/workbook/TestGDBus/client/client.c"
+},
+{
+  "directory": "/home/cg/GitHub/workbook/TestGDBus/build",
+  "command": "/usr/bin/cc -I/home/cg/GitHub/workbook/TestGDBus/includes -I/home/cg/GitHub/workbook/TestGDBus/gdbus -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/gio-unix-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -g -o client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o -c /home/cg/GitHub/workbook/TestGDBus/gdbus/gdbusdemo_gen.c",
+  "file": "/home/cg/GitHub/workbook/TestGDBus/gdbus/gdbusdemo_gen.c"
+},
+{
+  "directory": "/home/cg/GitHub/workbook/TestGDBus/build",
+  "command": "/usr/bin/cc -I/home/cg/GitHub/workbook/TestGDBus/includes -I/home/cg/GitHub/workbook/TestGDBus/gdbus -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/gio-unix-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -g -o server/CMakeFiles/server.dir/server.c.o -c /home/cg/GitHub/workbook/TestGDBus/server/server.c",
+  "file": "/home/cg/GitHub/workbook/TestGDBus/server/server.c"
+},
+{
+  "directory": "/home/cg/GitHub/workbook/TestGDBus/build",
+  "command": "/usr/bin/cc -I/home/cg/GitHub/workbook/TestGDBus/includes -I/home/cg/GitHub/workbook/TestGDBus/gdbus -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/gio-unix-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -g -o server/CMakeFiles/server.dir/__/gdbus/gdbusdemo_gen.c.o -c /home/cg/GitHub/workbook/TestGDBus/gdbus/gdbusdemo_gen.c",
+  "file": "/home/cg/GitHub/workbook/TestGDBus/gdbus/gdbusdemo_gen.c"
+}
+]

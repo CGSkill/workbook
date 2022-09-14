@@ -1,7 +1,7 @@
 CMAKE_MINIMUM_REQUIRED (VERSION 2.8.10)
 
 # The library has to be dynamically linked to the header
-INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/includes) #包含目录
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/includes)
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/gdbus)
 INCLUDE_DIRECTORIES(/usr/include/glib-2.0)
 INCLUDE_DIRECTORIES(/usr/lib/glib-2.0/include)

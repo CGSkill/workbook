@@ -1,7 +1,7 @@
 client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o: \
- /home/cg/GitHub/workbook/TestGDBus/gdbus/gdbusdemo_gen.c \
+ /home/cg/GitHub/GDBus-master/gdbus/gdbusdemo_gen.c \
  /usr/include/stdc-predef.h \
- /home/cg/GitHub/workbook/TestGDBus/gdbus/gdbusdemo_gen.h \
+ /home/cg/GitHub/GDBus-master/gdbus/gdbusdemo_gen.h \
  /usr/include/glib-2.0/gio/gio.h /usr/include/glib-2.0/gio/giotypes.h \
  /usr/include/glib-2.0/gio/gioenums.h /usr/include/glib-2.0/glib-object.h \
  /usr/include/glib-2.0/gobject/gbinding.h /usr/include/glib-2.0/glib.h \

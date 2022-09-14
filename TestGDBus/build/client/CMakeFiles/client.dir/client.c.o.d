@@ -1,7 +1,6 @@
 client/CMakeFiles/client.dir/client.c.o: \
- /home/cg/GitHub/workbook/TestGDBus/client/client.c \
- /usr/include/stdc-predef.h \
- /home/cg/GitHub/workbook/TestGDBus/includes/gdbusCommon.h \
+ /home/cg/GitHub/GDBus-master/client/client.c /usr/include/stdc-predef.h \
+ /home/cg/GitHub/GDBus-master/includes/gdbusCommon.h \
  /usr/include/glib-2.0/gio/gio.h /usr/include/glib-2.0/gio/giotypes.h \
  /usr/include/glib-2.0/gio/gioenums.h /usr/include/glib-2.0/glib-object.h \
  /usr/include/glib-2.0/gobject/gbinding.h /usr/include/glib-2.0/glib.h \
@@ -317,6 +316,6 @@ client/CMakeFiles/client.dir/client.c.o: \
  /usr/include/glib-2.0/gio/gzlibcompressor.h \
  /usr/include/glib-2.0/gio/gzlibdecompressor.h \
  /usr/include/glib-2.0/gio/gio-autocleanups.h \
- /home/cg/GitHub/workbook/TestGDBus/includes/client.h \
- /usr/include/ctype.h /usr/lib/gcc/x86_64-linux-gnu/9/include/stdbool.h \
- /home/cg/GitHub/workbook/TestGDBus/gdbus/gdbusdemo_gen.h
+ /home/cg/GitHub/GDBus-master/includes/client.h /usr/include/ctype.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdbool.h \
+ /home/cg/GitHub/GDBus-master/gdbus/gdbusdemo_gen.h

@@ -1,4 +1,4 @@
-# Install script for directory: /home/cg/GitHub/workbook/TestGDBus/gdbus
+# Install script for directory: /home/cg/GitHub/GDBus-master/gdbus
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

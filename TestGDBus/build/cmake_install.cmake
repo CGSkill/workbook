@@ -1,4 +1,4 @@
-# Install script for directory: /home/cg/GitHub/workbook/TestGDBus
+# Install script for directory: /home/cg/GitHub/GDBus-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cg/GitHub/workbook/TestGDBus/build/client/cmake_install.cmake")
-  include("/home/cg/GitHub/workbook/TestGDBus/build/server/cmake_install.cmake")
-  include("/home/cg/GitHub/workbook/TestGDBus/build/gdbus/cmake_install.cmake")
+  include("/home/cg/GitHub/GDBus-master/build/client/cmake_install.cmake")
+  include("/home/cg/GitHub/GDBus-master/build/server/cmake_install.cmake")
+  include("/home/cg/GitHub/GDBus-master/build/gdbus/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cg/GitHub/workbook/TestGDBus/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/cg/GitHub/GDBus-master/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

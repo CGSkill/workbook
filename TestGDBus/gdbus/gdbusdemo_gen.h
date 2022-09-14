@@ -6,8 +6,8 @@
  * LGPL linking clauses.
  */
 
-#ifndef ___HOME_CG_GITHUB_WORKBOOK_TESTGDBUS_GDBUS_GDBUSDEMO_GEN_H__
-#define ___HOME_CG_GITHUB_WORKBOOK_TESTGDBUS_GDBUS_GDBUSDEMO_GEN_H__
+#ifndef ___HOME_CG_GITHUB_GDBUS_MASTER_GDBUS_GDBUSDEMO_GEN_H__
+#define ___HOME_CG_GITHUB_GDBUS_MASTER_GDBUS_GDBUSDEMO_GEN_H__
 
 #include <gio/gio.h>
 
@@ -15,111 +15,72 @@ G_BEGIN_DECLS
 
 
 /* ------------------------------------------------------------------------ */
-/* Declarations for com.company.project.dbus.s */
+/* Declarations for com.gdbus.demo */
 
-#define TYPE_COM_COMPANY_PROJECT_DBUS_S (com_company_project_dbus_s_get_type ())
-#define COM_COMPANY_PROJECT_DBUS_S(o) (G_TYPE_CHECK_INSTANCE_CAST ((o), TYPE_COM_COMPANY_PROJECT_DBUS_S, ComCompanyProjectDbusS))
-#define IS_COM_COMPANY_PROJECT_DBUS_S(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), TYPE_COM_COMPANY_PROJECT_DBUS_S))
-#define COM_COMPANY_PROJECT_DBUS_S_GET_IFACE(o) (G_TYPE_INSTANCE_GET_INTERFACE ((o), TYPE_COM_COMPANY_PROJECT_DBUS_S, ComCompanyProjectDbusSIface))
+#define TYPE_COM_GDBUS_DEMO (com_gdbus_demo_get_type ())
+#define COM_GDBUS_DEMO(o) (G_TYPE_CHECK_INSTANCE_CAST ((o), TYPE_COM_GDBUS_DEMO, ComGdbusDemo))
+#define IS_COM_GDBUS_DEMO(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), TYPE_COM_GDBUS_DEMO))
+#define COM_GDBUS_DEMO_GET_IFACE(o) (G_TYPE_INSTANCE_GET_INTERFACE ((o), TYPE_COM_GDBUS_DEMO, ComGdbusDemoIface))
 
-struct _ComCompanyProjectDbusS;
-typedef struct _ComCompanyProjectDbusS ComCompanyProjectDbusS;
-typedef struct _ComCompanyProjectDbusSIface ComCompanyProjectDbusSIface;
+struct _ComGdbusDemo;
+typedef struct _ComGdbusDemo ComGdbusDemo;
+typedef struct _ComGdbusDemoIface ComGdbusDemoIface;
 
-struct _ComCompanyProjectDbusSIface
+struct _ComGdbusDemoIface
 {
   GTypeInterface parent_iface;
 
 
-  gboolean (*handle_get_value) (
-    ComCompanyProjectDbusS *object,
+  gboolean (*handle_set_name) (
+    ComGdbusDemo *object,
     GDBusMethodInvocation *invocation,
-    gint arg_type,
-    const gchar *arg_input_array);
+    const gchar *arg_name);
 
-  gboolean (*handle_set_value) (
-    ComCompanyProjectDbusS *object,
-    GDBusMethodInvocation *invocation,
-    gint arg_type,
-    const gchar *arg_input_array);
-
-  void (*message) (
-    ComCompanyProjectDbusS *object,
-    const gchar *arg_message_array);
+  void (*send_signal) (
+    ComGdbusDemo *object,
+    gint arg_sig);
 
 };
 
-GType com_company_project_dbus_s_get_type (void) G_GNUC_CONST;
+GType com_gdbus_demo_get_type (void) G_GNUC_CONST;
 
-GDBusInterfaceInfo *com_company_project_dbus_s_interface_info (void);
-guint com_company_project_dbus_s_override_properties (GObjectClass *klass, guint property_id_begin);
+GDBusInterfaceInfo *com_gdbus_demo_interface_info (void);
+guint com_gdbus_demo_override_properties (GObjectClass *klass, guint property_id_begin);
 
 
 /* D-Bus method call completion functions: */
-void com_company_project_dbus_s_complete_set_value (
-    ComCompanyProjectDbusS *object,
+void com_gdbus_demo_complete_set_name (
+    ComGdbusDemo *object,
     GDBusMethodInvocation *invocation,
-    gint result);
-
-void com_company_project_dbus_s_complete_get_value (
-    ComCompanyProjectDbusS *object,
-    GDBusMethodInvocation *invocation,
-    const gchar *output_array,
-    gint result);
+    const gchar *response);
 
 
 
 /* D-Bus signal emissions functions: */
-void com_company_project_dbus_s_emit_message (
-    ComCompanyProjectDbusS *object,
-    const gchar *arg_message_array);
+void com_gdbus_demo_emit_send_signal (
+    ComGdbusDemo *object,
+    gint arg_sig);
 
 
 
 /* D-Bus method calls: */
-void com_company_project_dbus_s_call_set_value (
-    ComCompanyProjectDbusS *proxy,
-    gint arg_type,
-    const gchar *arg_input_array,
+void com_gdbus_demo_call_set_name (
+    ComGdbusDemo *proxy,
+    const gchar *arg_name,
     GCancellable *cancellable,
     GAsyncReadyCallback callback,
     gpointer user_data);
 
-gboolean com_company_project_dbus_s_call_set_value_finish (
-    ComCompanyProjectDbusS *proxy,
-    gint *out_result,
+gboolean com_gdbus_demo_call_set_name_finish (
+    ComGdbusDemo *proxy,
+    gchar **out_response,
     GAsyncResult *res,
     GError **error);
 
-gboolean com_company_project_dbus_s_call_set_value_sync (
-    ComCompanyProjectDbusS *proxy,
-    gint arg_type,
-    const gchar *arg_input_array,
-    gint *out_result,
-    GCancellable *cancellable,
-    GError **error);
-
-void com_company_project_dbus_s_call_get_value (
-    ComCompanyProjectDbusS *proxy,
-    gint arg_type,
-    const gchar *arg_input_array,
-    GCancellable *cancellable,
-    GAsyncReadyCallback callback,
-    gpointer user_data);
-
-gboolean com_company_project_dbus_s_call_get_value_finish (
-    ComCompanyProjectDbusS *proxy,
-    gchar **out_output_array,
-    gint *out_result,
-    GAsyncResult *res,
-    GError **error);
-
-gboolean com_company_project_dbus_s_call_get_value_sync (
-    ComCompanyProjectDbusS *proxy,
-    gint arg_type,
-    const gchar *arg_input_array,
-    gchar **out_output_array,
-    gint *out_result,
+gboolean com_gdbus_demo_call_set_name_sync (
+    ComGdbusDemo *proxy,
+    const gchar *arg_name,
+    gchar **out_response,
     GCancellable *cancellable,
     GError **error);
 
@@ -127,36 +88,36 @@ gboolean com_company_project_dbus_s_call_get_value_sync (
 
 /* ---- */
 
-#define TYPE_COM_COMPANY_PROJECT_DBUS_S_PROXY (com_company_project_dbus_s_proxy_get_type ())
-#define COM_COMPANY_PROJECT_DBUS_S_PROXY(o) (G_TYPE_CHECK_INSTANCE_CAST ((o), TYPE_COM_COMPANY_PROJECT_DBUS_S_PROXY, ComCompanyProjectDbusSProxy))
-#define COM_COMPANY_PROJECT_DBUS_S_PROXY_CLASS(k) (G_TYPE_CHECK_CLASS_CAST ((k), TYPE_COM_COMPANY_PROJECT_DBUS_S_PROXY, ComCompanyProjectDbusSProxyClass))
-#define COM_COMPANY_PROJECT_DBUS_S_PROXY_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), TYPE_COM_COMPANY_PROJECT_DBUS_S_PROXY, ComCompanyProjectDbusSProxyClass))
-#define IS_COM_COMPANY_PROJECT_DBUS_S_PROXY(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), TYPE_COM_COMPANY_PROJECT_DBUS_S_PROXY))
-#define IS_COM_COMPANY_PROJECT_DBUS_S_PROXY_CLASS(k) (G_TYPE_CHECK_CLASS_TYPE ((k), TYPE_COM_COMPANY_PROJECT_DBUS_S_PROXY))
+#define TYPE_COM_GDBUS_DEMO_PROXY (com_gdbus_demo_proxy_get_type ())
+#define COM_GDBUS_DEMO_PROXY(o) (G_TYPE_CHECK_INSTANCE_CAST ((o), TYPE_COM_GDBUS_DEMO_PROXY, ComGdbusDemoProxy))
+#define COM_GDBUS_DEMO_PROXY_CLASS(k) (G_TYPE_CHECK_CLASS_CAST ((k), TYPE_COM_GDBUS_DEMO_PROXY, ComGdbusDemoProxyClass))
+#define COM_GDBUS_DEMO_PROXY_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), TYPE_COM_GDBUS_DEMO_PROXY, ComGdbusDemoProxyClass))
+#define IS_COM_GDBUS_DEMO_PROXY(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), TYPE_COM_GDBUS_DEMO_PROXY))
+#define IS_COM_GDBUS_DEMO_PROXY_CLASS(k) (G_TYPE_CHECK_CLASS_TYPE ((k), TYPE_COM_GDBUS_DEMO_PROXY))
 
-typedef struct _ComCompanyProjectDbusSProxy ComCompanyProjectDbusSProxy;
-typedef struct _ComCompanyProjectDbusSProxyClass ComCompanyProjectDbusSProxyClass;
-typedef struct _ComCompanyProjectDbusSProxyPrivate ComCompanyProjectDbusSProxyPrivate;
+typedef struct _ComGdbusDemoProxy ComGdbusDemoProxy;
+typedef struct _ComGdbusDemoProxyClass ComGdbusDemoProxyClass;
+typedef struct _ComGdbusDemoProxyPrivate ComGdbusDemoProxyPrivate;
 
-struct _ComCompanyProjectDbusSProxy
+struct _ComGdbusDemoProxy
 {
   /*< private >*/
   GDBusProxy parent_instance;
-  ComCompanyProjectDbusSProxyPrivate *priv;
+  ComGdbusDemoProxyPrivate *priv;
 };
 
-struct _ComCompanyProjectDbusSProxyClass
+struct _ComGdbusDemoProxyClass
 {
   GDBusProxyClass parent_class;
 };
 
-GType com_company_project_dbus_s_proxy_get_type (void) G_GNUC_CONST;
+GType com_gdbus_demo_proxy_get_type (void) G_GNUC_CONST;
 
 #if GLIB_CHECK_VERSION(2, 44, 0)
-G_DEFINE_AUTOPTR_CLEANUP_FUNC (ComCompanyProjectDbusSProxy, g_object_unref)
+G_DEFINE_AUTOPTR_CLEANUP_FUNC (ComGdbusDemoProxy, g_object_unref)
 #endif
 
-void com_company_project_dbus_s_proxy_new (
+void com_gdbus_demo_proxy_new (
     GDBusConnection     *connection,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -164,10 +125,10 @@ void com_company_project_dbus_s_proxy_new (
     GCancellable        *cancellable,
     GAsyncReadyCallback  callback,
     gpointer             user_data);
-ComCompanyProjectDbusS *com_company_project_dbus_s_proxy_new_finish (
+ComGdbusDemo *com_gdbus_demo_proxy_new_finish (
     GAsyncResult        *res,
     GError             **error);
-ComCompanyProjectDbusS *com_company_project_dbus_s_proxy_new_sync (
+ComGdbusDemo *com_gdbus_demo_proxy_new_sync (
     GDBusConnection     *connection,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -175,7 +136,7 @@ ComCompanyProjectDbusS *com_company_project_dbus_s_proxy_new_sync (
     GCancellable        *cancellable,
     GError             **error);
 
-void com_company_project_dbus_s_proxy_new_for_bus (
+void com_gdbus_demo_proxy_new_for_bus (
     GBusType             bus_type,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -183,10 +144,10 @@ void com_company_project_dbus_s_proxy_new_for_bus (
     GCancellable        *cancellable,
     GAsyncReadyCallback  callback,
     gpointer             user_data);
-ComCompanyProjectDbusS *com_company_project_dbus_s_proxy_new_for_bus_finish (
+ComGdbusDemo *com_gdbus_demo_proxy_new_for_bus_finish (
     GAsyncResult        *res,
     GError             **error);
-ComCompanyProjectDbusS *com_company_project_dbus_s_proxy_new_for_bus_sync (
+ComGdbusDemo *com_gdbus_demo_proxy_new_for_bus_sync (
     GBusType             bus_type,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -197,38 +158,38 @@ ComCompanyProjectDbusS *com_company_project_dbus_s_proxy_new_for_bus_sync (
 
 /* ---- */
 
-#define TYPE_COM_COMPANY_PROJECT_DBUS_S_SKELETON (com_company_project_dbus_s_skeleton_get_type ())
-#define COM_COMPANY_PROJECT_DBUS_S_SKELETON(o) (G_TYPE_CHECK_INSTANCE_CAST ((o), TYPE_COM_COMPANY_PROJECT_DBUS_S_SKELETON, ComCompanyProjectDbusSSkeleton))
-#define COM_COMPANY_PROJECT_DBUS_S_SKELETON_CLASS(k) (G_TYPE_CHECK_CLASS_CAST ((k), TYPE_COM_COMPANY_PROJECT_DBUS_S_SKELETON, ComCompanyProjectDbusSSkeletonClass))
-#define COM_COMPANY_PROJECT_DBUS_S_SKELETON_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), TYPE_COM_COMPANY_PROJECT_DBUS_S_SKELETON, ComCompanyProjectDbusSSkeletonClass))
-#define IS_COM_COMPANY_PROJECT_DBUS_S_SKELETON(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), TYPE_COM_COMPANY_PROJECT_DBUS_S_SKELETON))
-#define IS_COM_COMPANY_PROJECT_DBUS_S_SKELETON_CLASS(k) (G_TYPE_CHECK_CLASS_TYPE ((k), TYPE_COM_COMPANY_PROJECT_DBUS_S_SKELETON))
+#define TYPE_COM_GDBUS_DEMO_SKELETON (com_gdbus_demo_skeleton_get_type ())
+#define COM_GDBUS_DEMO_SKELETON(o) (G_TYPE_CHECK_INSTANCE_CAST ((o), TYPE_COM_GDBUS_DEMO_SKELETON, ComGdbusDemoSkeleton))
+#define COM_GDBUS_DEMO_SKELETON_CLASS(k) (G_TYPE_CHECK_CLASS_CAST ((k), TYPE_COM_GDBUS_DEMO_SKELETON, ComGdbusDemoSkeletonClass))
+#define COM_GDBUS_DEMO_SKELETON_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), TYPE_COM_GDBUS_DEMO_SKELETON, ComGdbusDemoSkeletonClass))
+#define IS_COM_GDBUS_DEMO_SKELETON(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), TYPE_COM_GDBUS_DEMO_SKELETON))
+#define IS_COM_GDBUS_DEMO_SKELETON_CLASS(k) (G_TYPE_CHECK_CLASS_TYPE ((k), TYPE_COM_GDBUS_DEMO_SKELETON))
 
-typedef struct _ComCompanyProjectDbusSSkeleton ComCompanyProjectDbusSSkeleton;
-typedef struct _ComCompanyProjectDbusSSkeletonClass ComCompanyProjectDbusSSkeletonClass;
-typedef struct _ComCompanyProjectDbusSSkeletonPrivate ComCompanyProjectDbusSSkeletonPrivate;
+typedef struct _ComGdbusDemoSkeleton ComGdbusDemoSkeleton;
+typedef struct _ComGdbusDemoSkeletonClass ComGdbusDemoSkeletonClass;
+typedef struct _ComGdbusDemoSkeletonPrivate ComGdbusDemoSkeletonPrivate;
 
-struct _ComCompanyProjectDbusSSkeleton
+struct _ComGdbusDemoSkeleton
 {
   /*< private >*/
   GDBusInterfaceSkeleton parent_instance;
-  ComCompanyProjectDbusSSkeletonPrivate *priv;
+  ComGdbusDemoSkeletonPrivate *priv;
 };
 
-struct _ComCompanyProjectDbusSSkeletonClass
+struct _ComGdbusDemoSkeletonClass
 {
   GDBusInterfaceSkeletonClass parent_class;
 };
 
-GType com_company_project_dbus_s_skeleton_get_type (void) G_GNUC_CONST;
+GType com_gdbus_demo_skeleton_get_type (void) G_GNUC_CONST;
 
 #if GLIB_CHECK_VERSION(2, 44, 0)
-G_DEFINE_AUTOPTR_CLEANUP_FUNC (ComCompanyProjectDbusSSkeleton, g_object_unref)
+G_DEFINE_AUTOPTR_CLEANUP_FUNC (ComGdbusDemoSkeleton, g_object_unref)
 #endif
 
-ComCompanyProjectDbusS *com_company_project_dbus_s_skeleton_new (void);
+ComGdbusDemo *com_gdbus_demo_skeleton_new (void);
 
 
 G_END_DECLS
 
-#endif /* ___HOME_CG_GITHUB_WORKBOOK_TESTGDBUS_GDBUS_GDBUSDEMO_GEN_H__ */
+#endif /* ___HOME_CG_GITHUB_GDBUS_MASTER_GDBUS_GDBUSDEMO_GEN_H__ */

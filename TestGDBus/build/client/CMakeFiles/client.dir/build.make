@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cg/GitHub/workbook/TestGDBus
+CMAKE_SOURCE_DIR = /home/cg/GitHub/GDBus-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cg/GitHub/workbook/TestGDBus/build
+CMAKE_BINARY_DIR = /home/cg/GitHub/GDBus-master/build
 
 # Include any dependencies generated for this target.
 include client/CMakeFiles/client.dir/depend.make
@@ -72,30 +72,30 @@ include client/CMakeFiles/client.dir/flags.make
 client/CMakeFiles/client.dir/client.c.o: client/CMakeFiles/client.dir/flags.make
 client/CMakeFiles/client.dir/client.c.o: ../client/client.c
 client/CMakeFiles/client.dir/client.c.o: client/CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/GitHub/workbook/TestGDBus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object client/CMakeFiles/client.dir/client.c.o"
-	cd /home/cg/GitHub/workbook/TestGDBus/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT client/CMakeFiles/client.dir/client.c.o -MF CMakeFiles/client.dir/client.c.o.d -o CMakeFiles/client.dir/client.c.o -c /home/cg/GitHub/workbook/TestGDBus/client/client.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/GitHub/GDBus-master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object client/CMakeFiles/client.dir/client.c.o"
+	cd /home/cg/GitHub/GDBus-master/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT client/CMakeFiles/client.dir/client.c.o -MF CMakeFiles/client.dir/client.c.o.d -o CMakeFiles/client.dir/client.c.o -c /home/cg/GitHub/GDBus-master/client/client.c
 
 client/CMakeFiles/client.dir/client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/client.dir/client.c.i"
-	cd /home/cg/GitHub/workbook/TestGDBus/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cg/GitHub/workbook/TestGDBus/client/client.c > CMakeFiles/client.dir/client.c.i
+	cd /home/cg/GitHub/GDBus-master/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cg/GitHub/GDBus-master/client/client.c > CMakeFiles/client.dir/client.c.i
 
 client/CMakeFiles/client.dir/client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/client.dir/client.c.s"
-	cd /home/cg/GitHub/workbook/TestGDBus/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cg/GitHub/workbook/TestGDBus/client/client.c -o CMakeFiles/client.dir/client.c.s
+	cd /home/cg/GitHub/GDBus-master/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cg/GitHub/GDBus-master/client/client.c -o CMakeFiles/client.dir/client.c.s
 
 client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o: client/CMakeFiles/client.dir/flags.make
 client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o: ../gdbus/gdbusdemo_gen.c
 client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o: client/CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/GitHub/workbook/TestGDBus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o"
-	cd /home/cg/GitHub/workbook/TestGDBus/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o -MF CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o.d -o CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o -c /home/cg/GitHub/workbook/TestGDBus/gdbus/gdbusdemo_gen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cg/GitHub/GDBus-master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o"
+	cd /home/cg/GitHub/GDBus-master/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o -MF CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o.d -o CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o -c /home/cg/GitHub/GDBus-master/gdbus/gdbusdemo_gen.c
 
 client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.i"
-	cd /home/cg/GitHub/workbook/TestGDBus/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cg/GitHub/workbook/TestGDBus/gdbus/gdbusdemo_gen.c > CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.i
+	cd /home/cg/GitHub/GDBus-master/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cg/GitHub/GDBus-master/gdbus/gdbusdemo_gen.c > CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.i
 
 client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.s"
-	cd /home/cg/GitHub/workbook/TestGDBus/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cg/GitHub/workbook/TestGDBus/gdbus/gdbusdemo_gen.c -o CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.s
+	cd /home/cg/GitHub/GDBus-master/build/client && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cg/GitHub/GDBus-master/gdbus/gdbusdemo_gen.c -o CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.s
 
 # Object files for target client
 client_OBJECTS = \
@@ -109,18 +109,18 @@ client/client: client/CMakeFiles/client.dir/client.c.o
 client/client: client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o
 client/client: client/CMakeFiles/client.dir/build.make
 client/client: client/CMakeFiles/client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cg/GitHub/workbook/TestGDBus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable client"
-	cd /home/cg/GitHub/workbook/TestGDBus/build/client && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cg/GitHub/GDBus-master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable client"
+	cd /home/cg/GitHub/GDBus-master/build/client && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 client/CMakeFiles/client.dir/build: client/client
 .PHONY : client/CMakeFiles/client.dir/build
 
 client/CMakeFiles/client.dir/clean:
-	cd /home/cg/GitHub/workbook/TestGDBus/build/client && $(CMAKE_COMMAND) -P CMakeFiles/client.dir/cmake_clean.cmake
+	cd /home/cg/GitHub/GDBus-master/build/client && $(CMAKE_COMMAND) -P CMakeFiles/client.dir/cmake_clean.cmake
 .PHONY : client/CMakeFiles/client.dir/clean
 
 client/CMakeFiles/client.dir/depend:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cg/GitHub/workbook/TestGDBus /home/cg/GitHub/workbook/TestGDBus/client /home/cg/GitHub/workbook/TestGDBus/build /home/cg/GitHub/workbook/TestGDBus/build/client /home/cg/GitHub/workbook/TestGDBus/build/client/CMakeFiles/client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cg/GitHub/GDBus-master/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cg/GitHub/GDBus-master /home/cg/GitHub/GDBus-master/client /home/cg/GitHub/GDBus-master/build /home/cg/GitHub/GDBus-master/build/client /home/cg/GitHub/GDBus-master/build/client/CMakeFiles/client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : client/CMakeFiles/client.dir/depend
 

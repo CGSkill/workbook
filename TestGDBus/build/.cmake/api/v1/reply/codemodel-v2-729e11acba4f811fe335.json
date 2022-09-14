@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.10"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "client",
+					"jsonFile" : "directory-client-Debug-eda4c8a4dacec2844350.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "client",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "server",
+					"jsonFile" : "directory-server-Debug-244843e92778ba082abc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "server",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "gdbus",
+					"jsonFile" : "directory-gdbus-Debug-f9563f64cbf7cb8cad26.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "gdbus"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "gdbusdemo",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "client::@b0c487aac068df482bf0",
+					"jsonFile" : "target-client-Debug-da5d07536626bd86300a.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "server::@d19778d2e34a1e3ddfc0",
+					"jsonFile" : "target-server-Debug-4c95f88193a13147aaa1.json",
+					"name" : "server",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/cg/GitHub/workbook/TestGDBus/build",
+		"source" : "/home/cg/GitHub/workbook/TestGDBus"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

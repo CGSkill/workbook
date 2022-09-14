@@ -1,19 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<node name="/com/company/project/dbus/s">
-  <interface name="com.company.project.dbus.s">
-    <method name="SetValue">
-                <arg type="i" name="type" direction="in" /> 		<!-- op type -->
-                <arg type="s" name="input_array" direction="in" />	<!-- input value array-->
-                <arg type="i" name="result" direction="out" />
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+  <interface name="com.gdbus.demo">
+    <method name="SetName">
+      <arg name="name" type="s" direction="in"/>
+      <arg name="response" type="s" direction="out"/>
     </method>
-    <method name="GetValue">
-                <arg type="i" name="type" direction="in" />             <!-- input op type -->
-				<arg type="s" name="input_array" direction="in" />	<!-- input value array-->
-                <arg type="s" name="output_array" direction="out" />   <!-- output value array -->
-                <arg type="i" name="result" direction="out" />
-    </method>
-    <signal name="Message">
-                <arg type="s" name="message_array" /> 		<!-- message array-->
+    <signal name="SendSignal">
+      <arg name="sig" type="i"/>
     </signal>
   </interface>
 </node>
+

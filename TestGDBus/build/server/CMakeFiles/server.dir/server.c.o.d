@@ -1,8 +1,6 @@
 server/CMakeFiles/server.dir/server.c.o: \
- /home/cg/GitHub/workbook/TestGDBus/server/server.c \
- /usr/include/stdc-predef.h \
- /home/cg/GitHub/workbook/TestGDBus/includes/server.h \
- /usr/include/string.h \
+ /home/cg/GitHub/GDBus-master/server/server.c /usr/include/stdc-predef.h \
+ /home/cg/GitHub/GDBus-master/includes/server.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -319,5 +317,5 @@ server/CMakeFiles/server.dir/server.c.o: \
  /usr/include/glib-2.0/gio/gzlibcompressor.h \
  /usr/include/glib-2.0/gio/gzlibdecompressor.h \
  /usr/include/glib-2.0/gio/gio-autocleanups.h \
- /home/cg/GitHub/workbook/TestGDBus/gdbus/gdbusdemo_gen.h \
- /home/cg/GitHub/workbook/TestGDBus/includes/gdbusCommon.h
+ /home/cg/GitHub/GDBus-master/gdbus/gdbusdemo_gen.h \
+ /home/cg/GitHub/GDBus-master/includes/gdbusCommon.h

@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cg/GitHub/workbook/TestGDBus
+CMAKE_SOURCE_DIR = /home/cg/GitHub/GDBus-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cg/GitHub/workbook/TestGDBus/build
+CMAKE_BINARY_DIR = /home/cg/GitHub/GDBus-master/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cg/GitHub/workbook/TestGDBus/build/CMakeFiles /home/cg/GitHub/workbook/TestGDBus/build/client//CMakeFiles/progress.marks
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cg/GitHub/workbook/TestGDBus/build/CMakeFiles 0
+	cd /home/cg/GitHub/GDBus-master/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cg/GitHub/GDBus-master/build/CMakeFiles /home/cg/GitHub/GDBus-master/build/client//CMakeFiles/progress.marks
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cg/GitHub/GDBus-master/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client/clean
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client/preinstall
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client/preinstall
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cg/GitHub/GDBus-master/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 client/CMakeFiles/client.dir/rule:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client/CMakeFiles/client.dir/rule
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client/CMakeFiles/client.dir/rule
 .PHONY : client/CMakeFiles/client.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ client: client/CMakeFiles/client.dir/rule
 
 # fast build rule for target.
 client/fast:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/build
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/build
 .PHONY : client/fast
 
 __/gdbus/gdbusdemo_gen.o: __/gdbus/gdbusdemo_gen.c.o
@@ -135,7 +135,7 @@ __/gdbus/gdbusdemo_gen.o: __/gdbus/gdbusdemo_gen.c.o
 
 # target to build an object file
 __/gdbus/gdbusdemo_gen.c.o:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.o
 .PHONY : __/gdbus/gdbusdemo_gen.c.o
 
 __/gdbus/gdbusdemo_gen.i: __/gdbus/gdbusdemo_gen.c.i
@@ -143,7 +143,7 @@ __/gdbus/gdbusdemo_gen.i: __/gdbus/gdbusdemo_gen.c.i
 
 # target to preprocess a source file
 __/gdbus/gdbusdemo_gen.c.i:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.i
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.i
 .PHONY : __/gdbus/gdbusdemo_gen.c.i
 
 __/gdbus/gdbusdemo_gen.s: __/gdbus/gdbusdemo_gen.c.s
@@ -151,7 +151,7 @@ __/gdbus/gdbusdemo_gen.s: __/gdbus/gdbusdemo_gen.c.s
 
 # target to generate assembly for a file
 __/gdbus/gdbusdemo_gen.c.s:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.s
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/__/gdbus/gdbusdemo_gen.c.s
 .PHONY : __/gdbus/gdbusdemo_gen.c.s
 
 client.o: client.c.o
@@ -159,7 +159,7 @@ client.o: client.c.o
 
 # target to build an object file
 client.c.o:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.c.o
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.c.o
 .PHONY : client.c.o
 
 client.i: client.c.i
@@ -167,7 +167,7 @@ client.i: client.c.i
 
 # target to preprocess a source file
 client.c.i:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.c.i
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.c.i
 .PHONY : client.c.i
 
 client.s: client.c.s
@@ -175,7 +175,7 @@ client.s: client.c.s
 
 # target to generate assembly for a file
 client.c.s:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.c.s
+	cd /home/cg/GitHub/GDBus-master/build && $(MAKE) $(MAKESILENT) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/client.c.s
 .PHONY : client.c.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cg/GitHub/workbook/TestGDBus/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cg/GitHub/GDBus-master/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
