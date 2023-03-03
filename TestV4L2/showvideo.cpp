@@ -144,7 +144,7 @@ void showvideo::paintEvent(QPaintEvent *)
     vd->get_frame((void ** )&p, &len);    //获得视频采集的初始数据
     convert_yuv_to_rgb_buffer(p, pp, 320, 240); //数据转换
 
-     QImage img = QImage(pp, 320,240, QImage::Format_RGB888);
+    QImage img = QImage(pp, 320,240, QImage::Format_RGB888);
 
     //this->img->loadFromData((uchar *)pp , 320*240*3*sizeof (char));
     label->setPixmap(QPixmap::fromImage(img, Qt::AutoColor));
