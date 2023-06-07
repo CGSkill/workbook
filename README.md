@@ -13,3 +13,4 @@
 10.TestColorPicker 实现简单的颜色拾取器,通过定时器采集程序之外的鼠标位置.
 11.TestBiaoPan 实现简单的表盘绘制，通过CANVAS,Context2D进行表盘绘制。
 12.TestLangTrans 参照:https://github.com/urielyan/LangTrans修改,能够提取.ts中的数据到表格
+13.Test_QtWidgetQML_connect 实现widget与qml的信号槽通信
